@@ -66,7 +66,6 @@ module game_logic
     wire end_of_game = (p1_out_of_lives || p2_out_of_lives) && ball_out_of_bounds;
     wire ball_out_of_bounds_p1;
     wire ball_out_of_bounds_p2;
-    assign reset_state = end_of_game;
 
     /////////////////////////////////////////////
     // Game state
