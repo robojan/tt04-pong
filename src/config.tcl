@@ -12,7 +12,7 @@ set script_dir [file dirname [file normalize [info script]]]
 source $::env(DESIGN_DIR)/user_config.tcl
 
 # save some time
-set ::env(RUN_KLAYOUT_XOR) 0
+# set ::env(RUN_KLAYOUT_XOR) 0
 set ::env(RUN_KLAYOUT_DRC) 0
 
 # don't put clock buffers on the outputs
@@ -30,6 +30,7 @@ set ::env(RIGHT_MARGIN_MULT) 6
 # absolute die size
 set ::env(FP_SIZING) absolute
 
+set ::env(PL_TARGET_DENSITY) 0.62
 set ::env(PL_BASIC_PLACEMENT) {0}
 set ::env(GRT_ALLOW_CONGESTION) "1"
 
